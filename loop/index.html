@@ -1,0 +1,58 @@
+<script>
+
+
+    // for loop --- > Entry Control loop
+
+    for (i = 0; i < 100; i = i + 10) {
+        document.write(i + "<button>Submit</button> </br>");
+
+    }
+
+
+    // while loop ---> Exit Control loop
+
+    i = 0;
+    while (i <= 100) {
+        document.write(i + "<button>Submit</button> </br>");
+        i = i + 10;
+    }
+
+
+    // do -while loop-- -> Exit control loop
+
+    i = 0;
+    do {
+        document.write(i + "<button>Do While</button> </br>");
+        i = i + 10;
+    }
+    while (i <= 100)
+
+
+
+    // for-in loop --> design for object
+
+    const person = {
+        name: "Shafrin Ahamed",
+        age: 27,
+        city: "Dhaka",
+        gender: "Male"
+    }
+
+    for (let props in person) {
+        // document.write(props + "<br/>")
+        document.write(props + ": " + person[props] + "<br/>");
+
+    }
+
+    // for-of loop --> design for Array
+
+    const cityList = ['Dhaka', 'Khulna', 'Rajshahi', 'Barisal', 'Noakhali']
+
+    for (let eachCity of cityList) {
+        document.write(eachCity + "<br/>")
+
+    }
+
+
+
+</script>
